@@ -13,7 +13,7 @@ public class ForgotPassword {
         System.out.println("Nhập email: ");
         String email = scanner.nextLine();
         for(User user: users.values()){
-            if(user.getEmail().equals(email)){
+            if(user.getEmail().equalsIgnoreCase(email)){
                 System.out.println("Email hợp lệ: ");
                 System.out.println("Nhập pass mới: ");
                 String newPassword = scanner.nextLine();
